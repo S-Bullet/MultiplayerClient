@@ -15,6 +15,14 @@ app.use(express.static(publicPath));
 io.on('connection', (socket) => {
     console.log('A user just connected.');
 
+    socket.on('startGame', () => {
+        io.emit('startGame');
+    })
+
+    socket.on('cryzyIsClicked', (data) => {
+        io.emit('cryzyIsClicked', data);
+    })
+
     socket.on('disconnection', () => {
         console.log('A user has disconnected.');
     })
