@@ -1,0 +1,24 @@
+{
+  "name": "multiplayerclient",
+  "version": "1.0.0",
+  "description": "https://dev.to/kubeden/how-to-use-socket-io-not-the-chat-3l21",
+  "main": "app.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/S-Bullet/MultiplayerClient.git"
+  },
+  "author": "Ilya",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/S-Bullet/MultiplayerClient/issues"
+  },
+  "homepage": "https://github.com/S-Bullet/MultiplayerClient#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.4"
+  }
+}
